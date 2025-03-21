@@ -7,14 +7,17 @@ download: {
 
 	{
 		ops: [
+			{	file: { mkdir: #directory, options: createParents: true } },
 			{ copy: ["go.mod", "go.sum"], destination: #directory, from: #from },
 			{
-				sh: #command
-				options: [
-					{ directory: #directory },
-					{ customName: "🏗️ " + #command + " " + strings.Join($packages, " ") },
-				]
-			},
+				diff: {
+					sh: #command
+					options: [
+						{ directory: #directory },
+						{ customName: "🏗️ " + #command },
+					]
+				}
+			}
 		]
 	}
 }
