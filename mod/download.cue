@@ -3,7 +3,7 @@ package mod
 download: {
 	#from: string
 	#command: string | *"go mod download"
-	#directory: string | *"."
+	#directory: string | *"/src"
 
 	{
 		ops: [
