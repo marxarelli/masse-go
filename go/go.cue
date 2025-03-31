@@ -5,7 +5,5 @@ import (
 	gomod "github.com/marxarelli/masse-go/mod"
 )
 
-build: gobuild.build
-mod: {
-	download: gomod.download
-}
+build: gobuild
+mod: gomod
