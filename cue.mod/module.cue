@@ -1,4 +1,4 @@
-module: "github.com/marxarelli/masse-go@v1"
+module: "github.com/marxarelli/masse-go@v2"
 language: {
 	version: "v0.13.0"
 }
